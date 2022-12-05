@@ -1,28 +1,36 @@
 <div class="main-content">
-  <div class="container-fluid">
-      <div class="row">
-          <div class="col-lg-9 col-md-6 col-sm-6">
-            <div class="row">
-                <div class="input-group ">
-                    <input style="margin-top: 10px;" type="text" value="" class="form-control" placeholder="Write a detail descript of what you want">
-                    <button mat-button type="submit" class="btn btn-white" (click)="onGenerateImage()">
-                        Generate Image
-                        <!-- <div class="ripple-container"></div> -->
-                    </button>
-                </div>
-            </div>
-            <div class="row">                
-                <div class="card">                    
-                    <div class="card-body">
-                      <h5 class="card-title">Create page</h5>
-                      <button class="pull-right" mat-button (click)="onImageSave()">Save</button>
-                      
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-6">
+                <div class="row">
+                    <div class="input-group">
+                        <textarea rows="2" style="margin-top: 10px;" type="text" value="" class="form-control"
+                            placeholder="Write a detail descript of what you want">In an autumn evening two ants are traveling
+                        through a big ocean</textarea>
                     </div>
-                    <div style="width: 600px; height: 600px;" id="tuiImageEditor"></div>
-                    <!-- <img class="card-img-bottom" src="../../assets/demo-book/a.png" alt="Card image"> -->
-                </div>                  
-            </div>
-              <!-- <div class="card card-stats">
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <input style="margin-top: 10px;" type="text" value="" class="form-control"
+                            placeholder="Write a detail descript of what you want">
+                        <button mat-button type="submit" class="btn btn-white" (click)="onGenerateImage()">
+                            Generate Image
+                            <!-- <div class="ripple-container"></div> -->
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Create page</h5>
+                            <button class="pull-right" mat-button (click)="onImageSave()">Save</button>
+
+                        </div>
+                        <div style="height: 600px;" id="editor_container"></div>
+                        <!-- <img class="card-img-bottom" src="../../assets/demo-book/a.png" alt="Card image"> -->
+                    </div>
+                </div>
+                <!-- <div class="card card-stats">
                   <div class="card-header card-header-warning card-header-icon">
                       <div class="card-icon">
                           <i class="material-icons">content_copy</i>
@@ -39,28 +47,30 @@
                       </div>
                   </div>
               </div> -->
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
-              <h3 class="m-0">Book page</h3>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <h3 class="m-0">Book page</h3>
 
-              <div class="card bg-dark text-black">
-                <img class="card-img" src="../../assets/demo-book/a.png" alt="Card image">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text">Last updated 3 mins ago</p>
+                <div class="card bg-dark text-black">
+                    <img class="card-img" src="../../assets/demo-book/a.png" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
                 </div>
-              </div>
 
-              <div class="card bg-dark text-black">
-                <img id="newImg" class="card-img" src="../../assets/demo-book/b.png" alt="Card image">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text">Last updated 3 mins ago</p>
+                <div class="card bg-dark text-black">
+                    <img id="newImg" class="card-img" src="../../assets/demo-book/b.png" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
                 </div>
-              </div>
-              <!-- <div class="card card-stats">
+                <!-- <div class="card card-stats">
                   <div class="card-header card-header-success card-header-icon">
                       <div class="card-icon">
                           <i class="material-icons">book</i>
@@ -74,8 +84,8 @@
                       </div>
                   </div>
               </div> -->
-          </div>
-          <!-- <div class="col-lg-3 col-md-6 col-sm-6">
+            </div>
+            <!-- <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="card card-stats">
                   <div class="card-header card-header-danger card-header-icon">
                       <div class="card-icon">
@@ -107,8 +117,8 @@
                   </div>
               </div>
           </div> -->
-      </div>
-      <!-- <div class="row">
+        </div>
+        <!-- <div class="row">
           <div class="col-md-4">
               <div class="card card-chart">
                   <div class="card-header card-header-success">
@@ -450,5 +460,5 @@
               </div>
           </div>
       </div> -->
-  </div>
+    </div>
 </div>
