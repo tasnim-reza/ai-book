@@ -12,11 +12,8 @@ import FilerobotImageEditor from 'filerobot-image-editor';
   styleUrls: ['./book-builder.component.css']
 })
 export class BookBuilderComponent implements OnInit {
-
-
-  private _tuiImageEditor!: ImageEditor;
   constructor() {
-
+    
   }
   ngOnInit() {
     const config:any = {
@@ -108,7 +105,7 @@ export class BookBuilderComponent implements OnInit {
 
   public onImageSave() {
 
-    (document.querySelector('#newImg') as any).src = this._tuiImageEditor.toDataURL()
+    // (document.querySelector('#newImg') as any).src = this._tuiImageEditor.toDataURL()
   }
 
 }
