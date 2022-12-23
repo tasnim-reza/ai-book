@@ -16,7 +16,7 @@ export class BookBuilderComponent implements OnInit {
     
   }
   ngOnInit() {
-    const config:any = {
+    const config:any = {      
       source: '../../assets/demo-book/a.png',
       onSave: (editedImageObject, designState) =>
         console.log('saved', editedImageObject, designState),

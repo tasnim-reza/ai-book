@@ -1,0 +1,8 @@
+.input-group-prepend-width {
+    width: 120px;
+}
+.form-control:focus {
+    border-color: white;
+    box-shadow: inset 0 1px 1px #eee, 0 0 8px #eee;
+}
+

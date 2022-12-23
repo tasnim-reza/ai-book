@@ -1,29 +1,38 @@
 <div class="main-content">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-9 col-md-6 col-sm-6">
+            <div class="col-lg-10 col-md-6 col-sm-6">
                 <div class="row">
                     <div class="input-group">
-                        <textarea rows="2" style="margin-top: 10px;" type="text" value="" class="form-control"
-                            placeholder="Write a detail descript of what you want">In an autumn evening two ants are traveling
+                        <div class="input-group-prepend input-group-prepend-width">
+                            <span class="input-group-text">Page text</span>
+                        </div>
+                        <textarea rows="2" type="text" value="" class="form-control"
+                            placeholder="Write a detail description of what you want">In an autumn evening two ants are traveling
                         through a big ocean</textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-group">
-                        <input style="margin-top: 10px;" type="text" value="" class="form-control"
-                            placeholder="Write a detail descript of what you want">
-                        <button mat-button type="submit" class="btn btn-white" (click)="onGenerateImage()">
-                            Generate Image
-                            <!-- <div class="ripple-container"></div> -->
-                        </button>
+                        <div class="input-group-prepend input-group-prepend-width">
+                            <span class="input-group-text">Page image</span>
+                        </div>
+                        <input type="text" value="" class="form-control" style="margin-top: 10px;"
+                            placeholder="Write a detail description of what you want">
+                        <div class="input-group-append">
+                            <button mat-button type="submit" class="btn btn-white" (click)="onGenerateImage()">
+                                Generate Image
+                                <!-- <div class="ripple-container"></div> -->
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Create page</h5>
-                            <button class="pull-right" mat-button (click)="onImageSave()">Save</button>
+                            <h5 class="card-title">Page Editor
+                                <button class="pull-right btn btn-white" mat-button (click)="onImageSave()">Save</button>
+                            </h5>
 
                         </div>
                         <div style="height: 600px;" id="editor_container"></div>
@@ -48,8 +57,8 @@
                   </div>
               </div> -->
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <h3 class="m-0">Book page</h3>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <h5 class="m-0">All pages</h5>
 
                 <div class="card bg-dark text-black">
                     <img class="card-img" src="../../assets/demo-book/a.png" alt="Card image">
