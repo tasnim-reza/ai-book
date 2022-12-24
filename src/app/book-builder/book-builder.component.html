@@ -28,15 +28,21 @@
                     </div>
                 </div>
                 <div class="row">
+                    <mat-toolbar>
+                        <span>Page Size 7"x10"</span>
+                        <span class="example-spacer"></span>
+                        <button class="pull-right btn btn-white" mat-button
+                                    (click)="onImageSave()">Save</button>
+                    </mat-toolbar>
                     <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Page Editor
-                                <button class="pull-right btn btn-white" mat-button (click)="onImageSave()">Save</button>
+                        <!-- <div class="card-body">
+                            <h5 class="card-title">                                
                             </h5>
 
-                        </div>
-                        <div style="height: 600px;" id="editor_container"></div>
+                        </div> -->
+                        <!-- <div style="height: 600px;" id="editor_container"></div> -->
                         <!-- <img class="card-img-bottom" src="../../assets/demo-book/a.png" alt="Card image"> -->
+                        <canvas id="canvas" width="1024" height="1024"></canvas>
                     </div>
                 </div>
                 <!-- <div class="card card-stats">
